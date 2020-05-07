@@ -192,6 +192,11 @@ nav .mini-logo {
 	display: none;
 }
 
+.nav-name {
+	color: #fff;
+	font-size: 24px;
+  }
+
 nav .logo {
 	margin-top: 45px;
 	padding: 0px 20px;
@@ -557,6 +562,11 @@ nav a:hover::before {
 
 .fourth-content .item {
 	margin: 10px;
+}
+
+.skill-icon {
+	color: #fff;
+	font-size: 120px;
 }
 
 .fourth-content .item img {
