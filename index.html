@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Moonlight CSS Website Template</title>
+        <title>Samuel Gieseker Portfolio Site</title>
 <!-- 
 Moonlight Template 
 https://templatemo.com/tm-512-moonlight
@@ -35,22 +35,33 @@ https://templatemo.com/tm-512-moonlight
     </div>
     
   
-        <nav>
+    <nav>
             <div class="logo">
                 <!-- <img src="img/logo.png" alt=""> -->
+                
             </div>
+
             <h2 class="nav-name">Samuel Gieseker</h2>
-          <div class="mini-logo">
-              <img src="img/mini_logo.png" alt="">
+        <div class="resume" id="resume">
+            <div class="resume-space">
+                <i class="fas fa-file-alt"></i>Resume
             </div>
-          <ul>
-            <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
-            <li><a href="#2"><i class="fa fa-user"></i> <em>About</em></a></li>
-            <li><a href="#3"><i class="fa fa-pencil"></i> <em>Projects</em></a></li>
-            <li><a href="#4"><i class="fa fa-image"></i> <em>Skills</em></a></li>
-            <li><a href="#5"><i class="fa fa-envelope"></i> <em>Contact</em></a></li>
-          </ul>
-        </nav>
+        </div>
+        <script>
+            document.getElementById("resume").addEventListener("click", function(){
+                window.open("https://drive.google.com/file/d/1m7dIqu5myKUyrq74RkyUNcbdtqRea9UC/view", '_blank');
+            });
+        </script>
+            <div class="mini-logo">
+                <img src="img/mini_logo.png" alt="">
+            </div>
+            <ul>
+            <li><a href="#1"><i class="fa fa-user"></i> <em>About</em></a></li>
+            <li><a href="#2"><i class="fa fa-image"></i> <em>Projects</em></a></li>
+            <li><a href="#3"><i class="fa fa-pencil"></i> <em>Skills</em></a></li>
+            <li><a href="#4"><i class="fa fa-envelope"></i> <em>Contact</em></a></li>
+        </ul>
+    </nav>
         
         <div class="slides">
           <div class="slide" id="1">
@@ -60,17 +71,18 @@ https://templatemo.com/tm-512-moonlight
                       <div class="author-image"><img src="img/temp_headshot.jpg" alt="Author Image"></div>
                   </div>
                   <div class="col-md-9">
-                      <h2>Samuel Gieseker</h2>
-                      <p>Please take a look at <strong><a rel="nofollow" href="https://www.toocss.com">Too CSS</a></strong> to see free template collections for you. Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit. <em>Sed vehicula blandit augue,</em> eu maximus odio tempus vitae.</p>
+                      <h2>About Me </h2>
+                      <p>Hello my name is Samuel Gieseker. I am a full stack software developer living in New York City. I have experience with JavaScript, React/Redux, Ruby on Rails, and Postgresql. When I’m not coding I enjoy studying Japanese, practicing parkour, playing video games, going hiking and occasionally walking across countries. Please take a look at my projects.</p>
                       <div class="main-btn"><a href="#2">Read More</a></div>
-                      <div class="fb-btn"><a rel="nofollow" href="https://github.com/Shrewbitz">Github</a></div>
-                      <div class="fb-btn"><a rel="nofollow" href="https://fb.com/templatemo">Linkedin</a></div>
-                      <div class="fb-btn"><a rel="nofollow" href="https://drive.google.com/file/d/1m7dIqu5myKUyrq74RkyUNcbdtqRea9UC/view">Resume</a></div>
+                      <div class="fb-btn"><a rel="nofollow" target="blank" href="https://github.com/Shrewbitz">Github</a></div>
+                      <div class="fb-btn"><a rel="nofollow" target="blank" href="https://www.linkedin.com/in/samuel-gieseker-4654901a9/">Linkedin</a></div>
+                      <div class="fb-btn"><a rel="nofollow" target="blank" href="https://fb.com/templatemo">Angelist</a></div>
+                      <!-- <div class="fb-btn"><a rel="nofollow" target="blank" href="https://drive.google.com/file/d/1m7dIqu5myKUyrq74RkyUNcbdtqRea9UC/view">Resume</a></div> -->
                   </div>
               </div>
             </div>
           </div>
-          <div class="slide" id="2">
+          <!-- <div class="slide" id="2">
             <div class="content second-content">
                 <div class="container-fluid">
                     <div class="col-md-6">
@@ -90,7 +102,7 @@ https://templatemo.com/tm-512-moonlight
                     </div>
                 </div>
             </div>
-          </div>
+          </div> -->
           <div class="slide" id="3">
             <div class="content third-content">
                 <div class="container-fluid">
@@ -102,8 +114,8 @@ https://templatemo.com/tm-512-moonlight
                                         <div class="col-md-6">
                                             <div class="left-content">
                                                 <h2>Wright</h2>
-                                                <p>Javascript alongside D3 , webpack, and googles translate api were utilized to make a dynamic language learning game.</p>
-                                                <div class="main-btn"><a href="https://github.com/Shrewbitz/wright">Repo</a><a href="https://shrewbitz.github.io/wright/">Livesite</a><a href="#4">Continue Reading</a></div>
+                                                <p>Dynamic language learning game that uses JavaScript alongside D3 , Webpack, and Google’s translate api.</p>
+                                                <div class="main-btn"><a href="https://github.com/Shrewbitz/wright">Repo</a><a href="https://shrewbitz.github.io/wright/">Livesite</a><a href="#3">Continue Reading</a></div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -126,8 +138,8 @@ https://templatemo.com/tm-512-moonlight
                                         <div class="col-md-6">
                                             <div class="right-content">
                                                 <h2>Hootz</h2>
-                                                <p>A yelp clone was built with Ruby on Rails, React, Redux, PSQL, Amazon Web Services. </p>
-                                                <div class="main-btn"><a href="https://github.com/Shrewbitz/hoot">Repo</a><a href="https://hootz.herokuapp.com/#/">Livesite</a><a href="#4">Continue Reading</a></div>
+                                                <p>A Yelp clone that was built with Ruby on Rails, React, Redux, PSQL, Amazon Web Services.</p>
+                                                <div class="main-btn"><a href="https://github.com/Shrewbitz/hoot">Repo</a><a href="https://hootz.herokuapp.com/#/">Livesite</a><a href="#3">Continue Reading</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -139,13 +151,13 @@ https://templatemo.com/tm-512-moonlight
                                         <div class="col-md-6">
                                             <div class="left-content">
                                                 <h2>Haiclue</h2>
-                                                <p>A mern stack with websockets was used to implement an online multiplayer in browser board game.</p>
-                                                <div class="main-btn"><a href="https://github.com/nirkraw/Haiclue">Repo</a><a href="https://haiclue.herokuapp.com/#/">Livesite</a><a href="#4">Continue Reading</a></div>
+                                                <p>A multiplayer game, based on a board game, built using the MERN stack and websockets.</p>
+                                                <div class="main-btn"><a href="https://github.com/nirkraw/Haiclue">Repo</a><a href="https://haiclue.herokuapp.com/#/">Livesite</a><a href="#3">Continue Reading</a></div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="right-image">
-                                                <img src="img/haiclue.png" alt="haiclue site">
+                                                <img src="img/haiclue.gif" alt="haiclue site">
                                             </div>
                                         </div>
                                     </div>
@@ -325,7 +337,7 @@ https://templatemo.com/tm-512-moonlight
             3. Click "Share" and choose "Embed map" tab
             4. Copy only URL and paste it within the src="" field below
 	-->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46979.83485056547!2d-73.99278102471047!3d40.755907522824344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzU5LjEiTiA3M8KwNTgnMzkuNCJX!5e0!3m2!1sja!2sus!4v1588799075355!5m2!1sja!2sus" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48352.497939574!2d-74.0082690549691!3d40.7613402379981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1590773855614!5m2!1sen!2sus" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-md-6">
