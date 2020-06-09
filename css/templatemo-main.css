@@ -588,6 +588,8 @@ nav a:hover::before {
 	font-size: 120px;
 }
 
+
+
 .fourth-content .item img {
 	max-width: 100%;
 	overflow: hidden;
@@ -800,6 +802,31 @@ nav a:hover::before {
 		padding: 30px 30px 30px 30px;
 	}
 
+}
+
+.contact-title {
+	color: white;
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+}
+
+.contact-white {
+	color: white;
+}
+
+
+.contact-mini {
+	color: white;
+	font-size: 24px;
+	display: flex;
+	justify-content: left;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.contact-box {
+	width: 400px;
 }
 
 @media (max-width: 749px) {
