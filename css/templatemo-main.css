@@ -577,10 +577,12 @@ nav a:hover::before {
 .fourth-content .container-fluid .col-md-4 {
 	padding-right: 0px;
 	padding-left: 0px;
+	width: 16.666666%;
 }
 
 .fourth-content .item {
-	margin: 10px;
+	margin: 0px;
+	/* width: 150px; */
 }
 
 .skill-icon {
@@ -599,56 +601,6 @@ nav a:hover::before {
 	position: relative;
 }
 
-.fourth-content .item .hover-effect {
-	text-align: left;
-	position: absolute;
-	color: #fff;
-	background-color: rgba(0,0,0,0.95);
-	bottom: 0;
-	top: 0;
-	left: 0;
-	right: 0;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.8s;
-}
-
-.fourth-content .item:hover .hover-effect {
-	opacity: 1;
-	visibility: visible;
-}
-
-.fourth-content .item .hover-effect .hover-content {
-	transform: translateY(-50%);
-    position: absolute;
-    text-align: left;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    padding: 30px;
-}
-
-.fourth-content .item .hover-effect h2 {
-	font-size: 18px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #fff;
-	letter-spacing: 0.5px;
-	border-bottom: 1px solid #fff;
-	display: inline-block;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-	margin-top: 0px;
-}
-
-.fourth-content .item .hover-effect p {
-	font-size: 13px;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	line-height: 22px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
-}
 
 
 
@@ -803,12 +755,28 @@ nav a:hover::before {
 	}
 
 }
+.contacts {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.contact-title-holder {
+	display: flex;
+	justify-content: center;
+}
+
 
 .contact-title {
 	color: white;
 	display: flex;
-	justify-content: left;
-	margin-left: 50px;
+	justify-content: center;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 10px;
+	width: 170px;
+	font-weight: 700;
+	letter-spacing: .5px;
+	margin-bottom: 50px;
 }
 
 .contact-white {
@@ -821,12 +789,33 @@ nav a:hover::before {
 	font-size: 24px;
 	display: flex;
 	justify-content: left;
-	margin-left: 50px;
-	margin-top: 20px;
+	margin-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.contact-links {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	font-size: 24px;
+	padding-left: 30px;
+	padding-right: 30px;	
 }
 
 .contact-box {
-	width: 400px;
+	
+	display: flex;
+	justify-content: center;
+	
+}
+
+.mini-box {
+	width: 410px;
+	border: solid 1px white;
+	
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 @media (max-width: 749px) {
